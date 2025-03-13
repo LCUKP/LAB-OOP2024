@@ -4,21 +4,18 @@
  */
 package Lab10;
 
-import Lab7_1.CheckingAccount;
-import Lab7_1.Account;
-import java.util.ArrayList;
 
 /**
  *
  * @author dtac6
  */
+import Lab7_1.Account;
 public class Customer {
     private String firstName;
     private String lastName;
     private Account acct[];
     private int numOfAccount;
 
-    // Constructors
     public Customer() {
         this.firstName = "";
         this.lastName = "";
@@ -58,13 +55,13 @@ public class Customer {
         return this.firstName.equals(c.firstName) && this.lastName.equals(c.lastName);
     }
 }
+//ArrayList<>()
 //public class Customer {
 //    private String firstName;
 //    private String lastName;
 //    private ArrayList<Account> acct;
 //    private int numOfAccount;
 //
-//    // Constructors
 //    public Customer() {
 //        this.firstName = "";
 //        this.lastName = "";
