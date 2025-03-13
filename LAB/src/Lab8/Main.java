@@ -13,6 +13,6 @@ public class Main {
 //        new CalculatorOneGUI();
         new CalculatorTwoGUI();
 //        new TellerGUI();
-        new MDIFromGUI();
+//        new MDIFromGUI();
     }
 }

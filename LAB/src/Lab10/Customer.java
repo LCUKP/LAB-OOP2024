@@ -6,6 +6,7 @@ package Lab10;
 
 import Lab7_1.CheckingAccount;
 import Lab7_1.Account;
+import java.util.ArrayList;
 
 /**
  *
@@ -57,3 +58,47 @@ public class Customer {
         return this.firstName.equals(c.firstName) && this.lastName.equals(c.lastName);
     }
 }
+//public class Customer {
+//    private String firstName;
+//    private String lastName;
+//    private ArrayList<Account> acct;
+//    private int numOfAccount;
+//
+//    // Constructors
+//    public Customer() {
+//        this.firstName = "";
+//        this.lastName = "";
+//        this.acct = new ArrayList<>();
+//    }
+//
+//    public Customer(String firstName, String lastName) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.acct = new ArrayList<>();
+//    }
+//
+//    public void addAccount(Account ac) {
+//            acct.add(ac);
+//            numOfAccount++;
+//    }
+//    
+//    public Account getAccount(int index) {
+//        return acct.get(index);
+//    }
+//    
+//    public int getNumofAccount() {
+//        return acct.size();
+//    }
+//    
+//    @Override
+//    public String toString() {
+//        if (acct == null){
+//            return firstName + " " + lastName + " doesn’t have account.";
+//        } 
+//        return "The " + firstName + " " + lastName + " has " + this.getNumofAccount() + " account" ;
+//    }
+//
+//    public boolean equals(Customer c) {
+//        return this.firstName.equals(c.firstName) && this.lastName.equals(c.lastName);
+//    }
+//}
