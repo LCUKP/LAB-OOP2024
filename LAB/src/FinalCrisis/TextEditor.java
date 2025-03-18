@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package FinalCisis;
+package FinalCrisis;
 
 
 /**
@@ -32,6 +32,7 @@ public class TextEditor implements ActionListener {
         p = new JPanel();
         jta = new JTextArea(20,40);
         
+        file.setMnemonic('F');
         _new = new JMenuItem("New");
         open = new JMenuItem("Open");
         save = new JMenuItem("Save");
@@ -45,6 +46,7 @@ public class TextEditor implements ActionListener {
         file.add(_new);
         file.add(open);
         file.add(save);
+        file.addSeparator();
         file.add(close);
         
         mnb.add(file);
@@ -88,6 +90,7 @@ public class TextEditor implements ActionListener {
                 ex.printStackTrace();
             }
         } else if(e.getSource().equals(close)){
+            JOptionPane.showMessageDialog(null, "Message", "Title", JOptionPane.ERROR_MESSAGE);
             System.exit(0);
         }
     }
